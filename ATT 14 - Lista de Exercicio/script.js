@@ -45,7 +45,7 @@ function cenario2() {
     var salario = document.getElementById("salario").value;
     var taxa;
     var valor_INSS;
-    var salario_liquido = salario - valor_INSS;
+    var salario_liquido;
 
     if (salario <= 1000) {
         taxa = 0.08;
@@ -55,9 +55,10 @@ function cenario2() {
         taxa = 0.09;
     }
 
-    valor_INSS = salario * taxa
+    valor_INSS = (salario*taxa);
+    salario_liquido = (salario - valor_INSS);
     console.log("Nome: "+nome_funcionario);
     console.log("Salario Bruto: "+salario);
-    console.log("Valor INSS: "+valor_INSS);
+    console.log("Valor do INSS: "+valor_INSS);
     console.log("Salário Liquido: "+salario_liquido);
 }
