@@ -1,8 +1,7 @@
-const varUm = 25;
-const varDois = 20;
 
 function Diferenca() {
-
+    let varUm = document.getElementById('var1').value;
+    let varDois = document.getElementById('var2').value;
     let resultado = (varUm - varDois);
     window.alert("O primeiro valor é: " + varUm);
     window.alert("O segundo valor é: " + varDois);
@@ -10,6 +9,8 @@ function Diferenca() {
 }
 
 function DobroUMaisTD() {
+    let varUm = document.getElementById('var3').value;
+    let varDois = document.getElementById('var4').value;
     const dobroUm = (varUm * 2);
     const triploDois = (varDois * 3);
     let resultado = (dobroUm + triploDois);
@@ -19,6 +20,8 @@ function DobroUMaisTD() {
 }
 
 function Multiplicar() {
+    let varUm = document.getElementById('var5').value;
+    let varDois = document.getElementById('var6').value;
     let resultado=(varUm * varDois);
     window.alert("O primeiro valor é: " + varUm);
     window.alert("O segundo valor é: " + varDois);
