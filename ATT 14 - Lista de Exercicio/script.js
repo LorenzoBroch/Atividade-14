@@ -49,7 +49,7 @@ function cenario2() {
 
     if (salario <= 1000) {
         taxa = 0.08;
-    } else if (salario >= 1500) {
+    } else if (salario >= 1000 <= 1500) {
         taxa = 0.085;
     } else {
         taxa = 0.09;
@@ -59,6 +59,6 @@ function cenario2() {
     salario_liquido = (salario - valor_INSS);
     console.log("Nome: "+nome_funcionario);
     console.log("Salario Bruto: "+salario);
-    console.log("Valor do INSS: "+valor_INSS);
+    console.log("Valor do INSS: "+valor_INSS.toFixed(2));
     console.log("Salário Liquido: "+salario_liquido);
 }
